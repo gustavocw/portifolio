@@ -1,0 +1,41 @@
+@use '../variables'
+@use '../mixins'
+    
+.text
+    font-size: 40px
+    font-family: 'helvetica'
+    font-weight: bold
+    text-align: center
+    text-shadow: 1px 1px 30px #000
+    margin-top: 7%
+    background: variables.$gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+
+.cardscert 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    margin-top: 3%
+    .img
+        width: 90%
+        height: 75%
+        border-radius: 5px
+  
+
+.cardcert
+    width: 300px
+    margin: 10px
+    padding: 10px
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    border-radius: variables.$card-border-radius
+    text-align: center
+
+    .h2
+        color: #fff
+    
+.cardcert:hover
+    box-shadow: 1px 1px 20px #0593e6
+    transition: .2s
+  

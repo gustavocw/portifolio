@@ -1,0 +1,29 @@
+@use '../variables'
+@use '../mixins'
+
+nav
+  @include mixins.navbar-styles
+  position: fixed
+  width: 100vw
+  height: 8vh
+  text-align: left
+  display: flex
+  justify-content: start
+  background: variables.$gradient
+  a
+    margin: 20px
+    color: #000
+    font-weight: bold
+
+
+  top: 0
+  right: 0
+  left: 0
+  z-index: 999
+  
+  a:hover
+    color: #1d1c1c
+    border-top: 2px solid #000
+    height: 35%
+    
+

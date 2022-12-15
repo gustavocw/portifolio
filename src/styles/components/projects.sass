@@ -1,0 +1,39 @@
+@use '../variables'
+    
+.text
+    font-size: 40px
+    font-family: 'helvetica'
+    font-weight: bold
+    text-align: center
+    text-shadow: 1px 1px 30px #000
+    margin-top: 2%
+    background: variables.$gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.cards 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    margin-top: 3%
+    img
+        width: 80%
+        height: 42%
+        border-radius: 5px
+  
+
+.card
+    width: 300px
+    margin: 10px
+    padding: 10px
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    border-radius: variables.$card-border-radius
+    text-align: center
+
+    h2, p
+        color: #fff
+    
+.card:hover
+    box-shadow: 1px 1px 20px #0593e6
+    transition: .2s
+  
